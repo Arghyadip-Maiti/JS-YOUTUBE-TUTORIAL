@@ -29,3 +29,11 @@ console.log(id === anotherId)//false
 let bigNo = 123456789102344554444n
 
 //js is a dynamically typed language...
+
+
+//+++++++++++++++++++++++MEMORY TYPE++++++++++++++++++++++++
+
+// stack(primitive), heap(non-primitive)
+
+
+
