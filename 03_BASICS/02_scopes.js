@@ -24,9 +24,9 @@ if(true){
         const app="youtube"
         console.log(username + app);//Arghya youtube
     }
-    // console.log(website);//error
+    // console.log(app);//error
 }
-// console.log(username);//error
+// console.log(name);//error
 
 
 //+++++++++++++++++++ interesting ++++++++++++++++++++++++
