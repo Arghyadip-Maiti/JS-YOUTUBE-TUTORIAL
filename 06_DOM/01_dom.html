@@ -30,19 +30,114 @@
 
 
 
+
+
     <!-- we get class with className... -->
     <!-- for id we use id -->
     
+    <!--[ getting any node ]-->
 
     <!--   document.getElementById('title')  ->  <h1 id="title" class="heading">DOM learning in youtube</h1>   -->
+
     <!--   document.getElementById('title').id  ->  'title'   -->
+
     <!--   document.getElementById('title').class  ->  undefined   -->
+
     <!--   document.getElementById('title').className  ->  'heading'   -->
+
     <!--   document.getElementById('title').innerHTML  ->  'DOM learning in youtube'   -->
+
     <!--   document.getElementById('title').innerText  ->  'DOM learning in youtube'   -->
+
     <!--   document.getElementById('title').getAttribute()  ->  error   -->
+
     <!--   document.getElementById('title').getAttribute('id')  ->  'title'   -->
+
     <!--   document.getElementById('title').getAttribute('class')  ->  'heading'   -->
+    
+    <!--   document.getElementById('title').setAttribute('class','new-class')  ->  class of the h1 tag will be changed from 'heading' to 'new-class'   -->
+
+
+    <!--[ adding any content ]-->
+
+    <!--
+    const title = document.getElementById('title')
+
+    title.style.color = 'red' // color of heading will be changed   
+    -->
+
+
+    <!-- difference b/w innerText & innerContent -->
+
+    <!--
+    <h1  id="title2" class="heading2">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+
+    const title2 = document.getElementById('title2')
+
+    title2.innerText = 'DOM learning on Chai aur code' // text portion which is visible in the screen
+
+    title2.innerContent = 'DOM learning on Chai aur code test text' // the whole text portion  
+    
+    // innerText -> visible content
+    // innerContent -> the whole content
+
+
+    title2.innerHTML = 'DOM learning on Chai aur code <span style="display: none;">test text</span>'
+    -->
+
+    <!--   const heading = document.getElementByClassName('heading')   -->
+
+    <!-- MAIN QUERY SELECTOR -->
+
+    <!--   const node = document.querySelector("#title"/".heading"/"h1") // selects the h1 tag... (the first one)    -->
+
+    <!--   const node = document.querySelectorAll(".heading"/"h1") // selects the h1 tag... (every tag which is h1 or have class='heading')    -->
+
+    <!--   const node = document.querySelectorAll("input[type=password]") // for selecting the input tag...    -->
+
+    <!--   const node = document.querySelectorAll("p:first-child") // for selecting the first child of p tag...    -->
+
+
+    <!--
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+
+    const ul = document.querySelector('ul');
+    const firstli = ul.querySelector('li')
+    firstli.style.color = 'red'  
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
