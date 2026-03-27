@@ -111,6 +111,60 @@
     firstli.style.color = 'red'  
     -->
 
+    <!--
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+
+    const ul = document.querySelector('ul');
+    const ListOfli = ul.querySelectorAll('li');
+    ListOfli.style.color = 'red'  // doesn't work that way...
+
+    ListOfli[1].style.color = 'red' // have to specificly select...
+    
+    ||------------------------------------------------------
+
+    ||-- Some Notes regarding this --||
+
+    getElementsById ==returns==> HTML collection
+    getElementsByClassName ==returns==> HTML collection
+    querySelectorAll ==returns==> Node List
+
+    Node list , HTML collection (doesn’t have map or filter)  !=  array
+
+    But very much similar to array…
+
+    When we use document.querySelectorAll….
+
+    We get a Node List….
+
+    We can’t just do DOM Manipulation using the list….
+
+    We have to be specific…
+
+    Have to use list[0] / list[1] …etc…
+
+    ||------------------------------------------------
+    ||-----can use for-each loop for Node List but not for HTML collection-----||
+
+    ListOfli.forEach((li)=>{
+        li.style.color = 'red';   || works well...
+     })
+
+
+    ||----If we want Array Properties...we need to convert HTML collection and Node List into array----||
+    
+    Suppose, ListOfli <--HTML collection/ Node List
+
+    Array.from(ListOfli) <----gives you an array
+         or
+    const arrOfli = Array.from(ListOfli) <-returns an array...      
+    
+    -->
+
 
 
 
