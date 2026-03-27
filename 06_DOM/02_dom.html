@@ -17,13 +17,37 @@
 <script>
     const parent = document.querySelector('.parent');
     console.log(parent);
+
+    // moving from parent to child...
+
     console.log(parent.children);//get an HTML collection...
     console.log(parent.children[3].innerHTML);//Thursday...can access any children like this...
+
+    parent.children[1].style.color = 'red';// Tuesday turns red...
+
+    console.log(parent.firstElementChild) //<div class="day">Monday</div>
+    console.log(parent.lastElementChild) //<div class="day">Thursday</div>
 
     // for loop in HTML collection
 
     for(let i=0;i<parent.children.length;i++){
         console.log(parent.children[i].innerHTML); //Monday  Tuesday  Wednesday  Thursday...
     }
+
+    // moving from child to parent...
+
+    const dayOne = document.querySelector(".day");
+    
+    console.log(dayOne); // <div class="day">Monday</div>
+
+    console.log(dayOne.parentElement); //the whole parent div...
+
+    console.log(dayOne.nextElementSibling); // <div class="day">Tuesday</div>
+
+    // getting all the nodes of parent div
+
+    console.log(parent.childNodes); // Node List(9) --->give you more idea about DOM tree...
+ 
+    
 </script>
 </html>
